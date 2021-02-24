@@ -37,7 +37,7 @@ export PATH="${INSTALL_PREFIX}/bin:${PATH}"
 ./build_fftw3.sh
 ./build_gsl.sh
 ./build_gmp.sh
-./build_mpfr.sh
+#./build_mpfr.sh
 
 ./build_ncurses.sh
 ./build_emacs.sh
