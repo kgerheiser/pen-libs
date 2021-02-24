@@ -11,20 +11,28 @@ export CXX=g++
 export NUM_BUILD_THREADS=20
 
 export PATH="${INSTALL_PREFIX}/bin:${PATH}"
+export LD_LIBRARY_PATH="${INSTALL_PREFIX}/lib:${INSTALL_PREFIX}/lib64:${LD_LIBRARY_PATH}"
 
 ./build_binutils.sh
+./build_zlib.sh
+./build_libxml.sh
+./build_curl.sh
+./build_openssl.sh
+./build_readline.sh
 ./build_cmake.sh
-./build_boost.sh
 ./build_flex.sh
 ./build_bison.sh
+./build_gcrypt.sh
+
+./build_boost.sh
 ./build_doxygen.sh
 ./build_gdb.sh
 ./build_git.sh
 ./build_hwloc.sh
 ./build_ninja.sh
 ./build_papi.sh
-./build_libxml.sh
 ./build_imagemagick.sh
+
 
 #./build_xz.sh
 #Needs to be setup with xz flags, and probably more
