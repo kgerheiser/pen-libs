@@ -1,4 +1,5 @@
 #!/bin/bash
+set -eux
 
 export PEN_ROOT=`pwd`
 export INSTALL_PREFIX=~/Desktop/pen-install/install
@@ -12,12 +13,17 @@ export NUM_BUILD_THREADS=20
 
 export PATH="${INSTALL_PREFIX}/bin:${PATH}"
 export LD_LIBRARY_PATH="${INSTALL_PREFIX}/lib:${INSTALL_PREFIX}/lib64:${LD_LIBRARY_PATH}"
+export LDFLAGS="-L${INSTALL_PREFIX}/lib -L${INSTALL_PREFIX}/lib64"
+export CFLAGS="-I${INSTALL_PREFIX}/include"
+
+mkdir -p ${DOWNLOAD_PATH}
+mkdir -p ${INSTALL_PREFIX}
 
 ./build_binutils.sh
 ./build_zlib.sh
+./build_openssl.sh
 ./build_libxml.sh
 ./build_curl.sh
-./build_openssl.sh
 ./build_readline.sh
 ./build_cmake.sh
 ./build_flex.sh
