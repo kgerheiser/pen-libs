@@ -23,6 +23,8 @@ export PATH="${INSTALL_PREFIX}/bin:${PATH}"
 ./build_hwloc.sh
 ./build_ninja.sh
 ./build_papi.sh
+./build_libxml.sh
+./build_imagemagick.sh
 
 #./build_xz.sh
 #Needs to be setup with xz flags, and probably more
@@ -43,5 +45,4 @@ export PATH="${INSTALL_PREFIX}/bin:${PATH}"
 ./build_emacs.sh
 ./build_nlopt.sh
 ./build_python.sh
-
 

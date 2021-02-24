@@ -1,4 +1,5 @@
 #!/bin/bash
+set -eux
 
 version="2.36"
 

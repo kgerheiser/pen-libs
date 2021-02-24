@@ -1,4 +1,5 @@
 #!/bin/bash
+set -eux
 
 cd $DOWNLOAD_PATH
 wget https://download.open-mpi.org/release/hwloc/v2.4/hwloc-2.4.1.tar.gz
