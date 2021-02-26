@@ -90,7 +90,7 @@ mkdir -p ${INSTALL_PREFIX}
 # #Needs to be setup with xz flags, and probably more
 # #./build_r.sh
 
-
+./build_pcre.sh
 ./build_swig.sh
 ./build_valgrind.sh
 ./build_gnuplot.sh
