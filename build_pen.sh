@@ -20,22 +20,22 @@ export PKG_CONFIG_PATH="${INSTALL_PREFIX}/lib/pkgconfig:${INSTALL_PREFIX}/lib64/
 mkdir -p ${DOWNLOAD_PATH}
 mkdir -p ${INSTALL_PREFIX}
 
-./build_cmake.sh
-./build_binutils.sh
-./build_zlib.sh
-./build_openssl.sh
-./build_libxml.sh
-./build_curl.sh
-./build_readline.sh
-./build_bzip2.sh
-./build_png.sh
-./build_cairo.sh
-./build_ffi.sh
-./build_flex.sh
-./build_bison.sh
-./build_gcrypt.sh
+# ./build_cmake.sh
+# ./build_binutils.sh
+# ./build_zlib.sh
+# ./build_openssl.sh
+# ./build_libxml.sh
+# ./build_curl.sh
+# ./build_readline.sh
+# ./build_bzip2.sh
+# ./build_png.sh
+# ./build_cairo.sh
+# ./build_ffi.sh
+# ./build_flex.sh
+# ./build_bison.sh
+# ./build_gcrypt.sh
 
-./build_boost.sh
+#./build_boost.sh
 #./build_doxygen.sh
 ./build_gdb.sh
 ./build_git.sh
@@ -62,8 +62,7 @@ mkdir -p ${INSTALL_PREFIX}
 ./build_ncurses.sh
 ./build_emacs.sh
 ./build_python.sh
-
-
+./build_llvm.sh
 # #./build_xz.sh
 # #Needs to be setup with xz flags, and probably more
 # #./build_r.sh
