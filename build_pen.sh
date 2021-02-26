@@ -53,7 +53,10 @@ mkdir -p ${INSTALL_PREFIX}
 # ipmi requires elevated permissions to install?
 # /usr/bin/install: cannot create regular file. '/usr/lib/systemd/system/bmc-watchdog.service': Permission denied
 #./build_ipmi.sh
-./build_libhugetlbfs.sh
+
+# fatal error: gnu/stubs-32.h: No such file or directory
+#./build_libhugetlbfs.sh
+
 ./build_motif.sh
 ./build_net-snmp.sh
 #./build_qt.sh
