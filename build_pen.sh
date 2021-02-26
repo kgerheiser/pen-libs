@@ -77,7 +77,7 @@ mkdir -p ${INSTALL_PREFIX}
 # Cannot find infiniband/verb.h? Need to configure for correct network type?
 #./build_mvapich2.sh
 
-./build_openmpi.sh
+#./build_openmpi.sh
 
 ./build_emacs.sh
 ./build_python.sh
