@@ -19,6 +19,7 @@ export CFLAGS="-I${INSTALL_PREFIX}/include"
 mkdir -p ${DOWNLOAD_PATH}
 mkdir -p ${INSTALL_PREFIX}
 
+./build_cmake.sh
 ./build_binutils.sh
 ./build_zlib.sh
 ./build_openssl.sh
@@ -26,9 +27,9 @@ mkdir -p ${INSTALL_PREFIX}
 ./build_curl.sh
 ./build_readline.sh
 ./build_bzip2.sh
+./build_png.sh
 ./build_cairo.sh
 
-./build_cmake.sh
 ./build_flex.sh
 ./build_bison.sh
 ./build_gcrypt.sh
