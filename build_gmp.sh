@@ -3,7 +3,7 @@ set -eux
 
 cd $DOWNLOAD_PATH
 
-wget https://gmplib.org/download/gmp/gmp-6.2.1.tar.lz
+wget https://gmplib.org/download/gmp/gmp-6.2.1.tar.xz
 tar -xf gmp-6.2.1.tar.lz
 cd gmp-6.2.1
 
