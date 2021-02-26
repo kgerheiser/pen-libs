@@ -95,7 +95,7 @@ mkdir -p ${INSTALL_PREFIX}
 
 ./build_pcre.sh
 ./build_swig.sh
-# valgrind doesn't like OpenMPI which doesn't support OpenMP 2.0 constructs.
+# valgrind doesn't like OpenMPI which doesn't support MPI 2.0 constructs.
 # Maybe build before MPI or use different MPI?
 #./build_valgrind.sh
 
