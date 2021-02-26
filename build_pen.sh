@@ -69,7 +69,9 @@ mkdir -p ${INSTALL_PREFIX}
 # Needs gnu multilib
 #./build_strace.sh
 
-./build_tk.sh
+# Needs X11
+#./build_tk.sh
+
 ./build_vim.sh
 ./build_mvapich2.sh
 ./build_openmpi.sh
