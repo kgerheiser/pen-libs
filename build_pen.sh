@@ -57,7 +57,9 @@ mkdir -p ${INSTALL_PREFIX}
 # fatal error: gnu/stubs-32.h: No such file or directory
 #./build_libhugetlbfs.sh
 
-./build_motif.sh
+# Needs X11
+#./build_motif.sh
+
 ./build_net-snmp.sh
 #./build_qt.sh
 ./build_screen.sh
