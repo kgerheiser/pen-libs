@@ -64,8 +64,11 @@ mkdir -p ${INSTALL_PREFIX}
 #./build_net-snmp.sh
 
 #./build_qt.sh
-./build_screen.sh
-./build_strace.sh
+#./build_screen.sh
+
+# Needs gnu multilib
+#./build_strace.sh
+
 ./build_tk.sh
 ./build_vim.sh
 ./build_mvapich2.sh
