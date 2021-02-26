@@ -2,8 +2,8 @@
 set -eux
 
 export PEN_ROOT=`pwd`
-export INSTALL_PREFIX=~/Desktop/pen-install/install
-export DOWNLOAD_PATH=~/Desktop/pen-install/src
+export INSTALL_PREFIX=/data/kgerheiser/pen/install
+export DOWNLOAD_PATH=/data/kgerheiser/pen/src
 
 export CC=gcc
 export FC=gfortran
@@ -12,24 +12,24 @@ export CXX=g++
 export NUM_BUILD_THREADS=20
 
 export PATH="${INSTALL_PREFIX}/bin:${PATH}"
-export DYLD_LIBRARY_PATH="${INSTALL_PREFIX}/lib:${INSTALL_PREFIX}/lib64"
+export LD_LIBRARY_PATH="${INSTALL_PREFIX}/lib:${INSTALL_PREFIX}/lib64:${LD_LIBRARY_PATH}"
 export LDFLAGS="-L${INSTALL_PREFIX}/lib -L${INSTALL_PREFIX}/lib64"
 export CFLAGS="-I${INSTALL_PREFIX}/include"
 
 mkdir -p ${DOWNLOAD_PATH}
 mkdir -p ${INSTALL_PREFIX}
 
-./build_cmake.sh
-./build_binutils.sh
-./build_zlib.sh
-./build_openssl.sh
-./build_libxml.sh
-./build_curl.sh
-./build_readline.sh
-./build_bzip2.sh
+#./build_cmake.sh
+#./build_binutils.sh
+#./build_zlib.sh
+#./build_openssl.sh
+#./build_libxml.sh
+#./build_curl.sh
+#./build_readline.sh
+#./build_bzip2.sh
 ./build_png.sh
 ./build_cairo.sh
-
+./build_ffi.sh
 ./build_flex.sh
 ./build_bison.sh
 ./build_gcrypt.sh
