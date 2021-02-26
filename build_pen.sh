@@ -103,7 +103,7 @@ mkdir -p ${INSTALL_PREFIX}
 #./build_mpfr.sh
 #./build_chapel.sh
 #./build_ucx.sh
-./build_pmix.sh
+#./build_pmix.sh
 ./build_gcc.sh
 
 #./build_qt.sh
