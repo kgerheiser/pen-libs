@@ -15,3 +15,5 @@ cd Python-3.9.2
             --with-ensurepip=yes
 make
 make install
+
+ln ${INSTALL_PREFIX}/bin/python3 ${INSTALL_PREFIX}/bin/python

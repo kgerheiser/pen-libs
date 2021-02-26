@@ -7,5 +7,7 @@ wget https://github.com/chapel-lang/chapel/releases/download/1.23.0/chapel-1.23.
 tar -xf chapel-1.23.0.tar.gz
 cd chapel-1.23.0
 
+export MANPATH=""
+
 source util/quickstart/setchplenv.bash
 make
