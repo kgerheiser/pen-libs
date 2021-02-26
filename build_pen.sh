@@ -15,6 +15,7 @@ export PATH="${INSTALL_PREFIX}/bin:${PATH}"
 export LD_LIBRARY_PATH="${INSTALL_PREFIX}/lib:${INSTALL_PREFIX}/lib64:${LD_LIBRARY_PATH}"
 export LDFLAGS="-L${INSTALL_PREFIX}/lib -L${INSTALL_PREFIX}/lib64"
 export CFLAGS="-I${INSTALL_PREFIX}/include"
+export PKG_CONFIG_PATH="${INSTALL_PREFIX}/lib/pkgconfig:${INSTALL_PREFIX}/lib64/pkgconfig"
 
 mkdir -p ${DOWNLOAD_PATH}
 mkdir -p ${INSTALL_PREFIX}
