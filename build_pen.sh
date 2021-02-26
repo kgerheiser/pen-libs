@@ -104,6 +104,7 @@ mkdir -p ${INSTALL_PREFIX}
 #./build_chapel.sh
 #./build_ucx.sh
 #./build_pmix.sh
+./build_mpc.sh
 ./build_gcc.sh
 
 #./build_qt.sh
