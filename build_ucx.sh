@@ -8,5 +8,5 @@ tar -xf ucx-1.9.0.tar.gz
 cd ucx-1.9.0
 
 ./configure --prefix=${INSTALL_PREFIX}
-make
+make -j${NUM_BUILD_THREADS}
 make install
