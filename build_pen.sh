@@ -72,8 +72,11 @@ mkdir -p ${INSTALL_PREFIX}
 # Needs X11
 #./build_tk.sh
 
-./build_vim.sh
-./build_mvapich2.sh
+#./build_vim.sh
+
+# Cannot find infiniband/verb.h? Need to configure for correct network type?
+#./build_mvapich2.sh
+
 ./build_openmpi.sh
 
 ./build_emacs.sh
