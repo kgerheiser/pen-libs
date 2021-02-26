@@ -100,10 +100,10 @@ mkdir -p ${INSTALL_PREFIX}
 #./build_gmp.sh
 #./build_nlopt.sh
 #./build_nhc.sh
-./build_chapel.sh
+./build_mpfr.sh
+#./build_chapel.sh
 ./build_ucx.sh
 ./build_pmix.sh
 
-#./build_mpfr.sh
 #./build_qt.sh
 
