@@ -37,7 +37,7 @@ mkdir -p ${INSTALL_PREFIX}
 
 #./build_boost.sh
 #./build_doxygen.sh
-./build_gdb.sh
+#./build_gdb.sh
 # expat needed by git
 ./build_expat.sh
 ./build_git.sh
