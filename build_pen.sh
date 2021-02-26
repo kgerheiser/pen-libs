@@ -63,7 +63,6 @@ mkdir -p ${INSTALL_PREFIX}
 # Needs some machine-specific customization
 #./build_net-snmp.sh
 
-#./build_qt.sh
 #./build_screen.sh
 
 # Needs gnu multilib
@@ -78,8 +77,9 @@ mkdir -p ${INSTALL_PREFIX}
 #./build_mvapich2.sh
 
 #./build_openmpi.sh
+./build_oprofile.sh
 
-./build_emacs.sh
+#./build_emacs.sh
 ./build_python.sh
 ./build_llvm.sh
 # #./build_xz.sh
@@ -97,4 +97,5 @@ mkdir -p ${INSTALL_PREFIX}
 ./build_nlopt.sh
 #./build_mpfr.sh
 
+#./build_qt.sh
 
