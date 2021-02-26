@@ -60,7 +60,9 @@ mkdir -p ${INSTALL_PREFIX}
 # Needs X11
 #./build_motif.sh
 
-./build_net-snmp.sh
+# Needs some machine-specific customization
+#./build_net-snmp.sh
+
 #./build_qt.sh
 ./build_screen.sh
 ./build_strace.sh
