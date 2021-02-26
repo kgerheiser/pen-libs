@@ -12,7 +12,8 @@ mkdir -p build && cd build
 
 
 ../configure --prefix=${INSTALL_PREFIX} \
-             --enable-languages=c,c++,fortran
+             --enable-languages=c,c++,fortran \
+             --disable-multilib
 
 make -j${NUM_BUILD_THREADS}
 make install
