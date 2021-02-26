@@ -84,8 +84,8 @@ mkdir -p ${INSTALL_PREFIX}
 #./build_oprofile.sh
 
 #./build_emacs.sh
-./build_python.sh
-./build_llvm.sh
+#./build_python.sh
+#./build_llvm.sh
 # #./build_xz.sh
 # #Needs to be setup with xz flags, and probably more
 # #./build_r.sh
@@ -99,7 +99,11 @@ mkdir -p ${INSTALL_PREFIX}
 ./build_gsl.sh
 ./build_gmp.sh
 ./build_nlopt.sh
-#./build_mpfr.sh
+./build_nhc.sh
+./build_chapel.sh
+./build_ucx.sh
+./build_pmix.sh
 
+#./build_mpfr.sh
 #./build_qt.sh
 
