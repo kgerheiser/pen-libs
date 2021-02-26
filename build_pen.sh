@@ -12,7 +12,7 @@ export CXX=g++
 export NUM_BUILD_THREADS=20
 
 export PATH="${INSTALL_PREFIX}/bin:${PATH}"
-export LD_LIBRARY_PATH="${INSTALL_PREFIX}/lib:${INSTALL_PREFIX}/lib64:${LD_LIBRARY_PATH}"
+export DYLD_LIBRARY_PATH="${INSTALL_PREFIX}/lib:${INSTALL_PREFIX}/lib64"
 export LDFLAGS="-L${INSTALL_PREFIX}/lib -L${INSTALL_PREFIX}/lib64"
 export CFLAGS="-I${INSTALL_PREFIX}/include"
 
@@ -25,6 +25,9 @@ mkdir -p ${INSTALL_PREFIX}
 ./build_libxml.sh
 ./build_curl.sh
 ./build_readline.sh
+./build_bzip2.sh
+./build_cairo.sh
+
 ./build_cmake.sh
 ./build_flex.sh
 ./build_bison.sh
@@ -39,24 +42,39 @@ mkdir -p ${INSTALL_PREFIX}
 ./build_papi.sh
 ./build_imagemagick.sh
 
+./build_libevent.sh
 
-#./build_xz.sh
-#Needs to be setup with xz flags, and probably more
-#./build_r.sh
+./build_libedit.sh
+./build_ipmi.sh
+./build_libhugetlbfs.sh
+./build_motif.sh
+./build_net-snmp.sh
+#./build_qt.sh
+./build_screen.sh
+./build_strace.sh
+./build_tk.sh
+./build_vim.sh
+./build_mvapich2.sh
+./build_openmpi.sh
+
+./build_ncurses.sh
+./build_emacs.sh
+./build_python.sh
+
+
+# #./build_xz.sh
+# #Needs to be setup with xz flags, and probably more
+# #./build_r.sh
 
 
 ./build_swig.sh
 ./build_valgrind.sh
-./build_bzip2.sh
-./build_cairo.sh
+./build_gnuplot.sh
 
 ./build_fftw3.sh
 ./build_gsl.sh
 ./build_gmp.sh
+./build_nlopt.sh
 #./build_mpfr.sh
 
-./build_ncurses.sh
-./build_emacs.sh
-./build_nlopt.sh
-./build_python.sh
 
