@@ -47,7 +47,7 @@ mkdir -p ${INSTALL_PREFIX}
 # ./build_papi.sh
 # ./build_imagemagick.sh
 # ./build_libevent.sh
-#./build_ncurses.sh
+./build_ncurses.sh
 ./build_libedit.sh
 ./build_ipmi.sh
 ./build_libhugetlbfs.sh
