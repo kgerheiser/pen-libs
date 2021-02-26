@@ -34,20 +34,20 @@ mkdir -p ${INSTALL_PREFIX}
 # ./build_flex.sh
 # ./build_bison.sh
 # ./build_gcrypt.sh
-
 #./build_boost.sh
 #./build_doxygen.sh
 #./build_gdb.sh
+
 # expat needed by git
-./build_expat.sh
-./build_git.sh
-./build_hwloc.sh
-./build_ninja.sh
-./build_papi.sh
-./build_imagemagick.sh
+# ./build_expat.sh
+# ./build_git.sh
 
-./build_libevent.sh
-
+# ./build_hwloc.sh
+# ./build_ninja.sh
+# ./build_papi.sh
+# ./build_imagemagick.sh
+# ./build_libevent.sh
+./build_ncurses.sh
 ./build_libedit.sh
 ./build_ipmi.sh
 ./build_libhugetlbfs.sh
@@ -61,7 +61,6 @@ mkdir -p ${INSTALL_PREFIX}
 ./build_mvapich2.sh
 ./build_openmpi.sh
 
-./build_ncurses.sh
 ./build_emacs.sh
 ./build_python.sh
 ./build_llvm.sh
