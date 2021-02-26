@@ -79,8 +79,9 @@ mkdir -p ${INSTALL_PREFIX}
 #./build_openmpi.sh
 
 # popt needed by oprofile
-./build_popt.sh
-./build_oprofile.sh
+# popt need gnu liberty library
+#./build_popt.sh
+#./build_oprofile.sh
 
 #./build_emacs.sh
 ./build_python.sh
