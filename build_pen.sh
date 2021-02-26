@@ -27,7 +27,7 @@ mkdir -p ${INSTALL_PREFIX}
 #./build_libxml.sh
 #./build_curl.sh
 #./build_readline.sh
-#./build_bzip2.sh
+./build_bzip2.sh
 #./build_png.sh
 ./build_cairo.sh
 ./build_ffi.sh
