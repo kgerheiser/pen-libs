@@ -92,7 +92,7 @@ mkdir -p ${INSTALL_PREFIX}
 
 ./build_pcre.sh
 ./build_swig.sh
-./build_valgrind.sh
+#./build_valgrind.sh
 ./build_gnuplot.sh
 
 ./build_fftw3.sh
