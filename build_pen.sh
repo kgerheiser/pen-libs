@@ -66,7 +66,7 @@ mkdir -p ${INSTALL_PREFIX}
 # Needs some machine-specific customization
 #./build_net-snmp.sh
 
-#./build_screen.sh
+./build_screen.sh
 
 # Needs gnu multilib
 #./build_strace.sh
